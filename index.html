@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D LOK'S | ENJOY LIFE® STUDIO</title>
+    <style>
+        /* --- THE REBEL VAULT STYLES --- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #0d0d0d; /* Deep Vault Black */
+            color: #e0e0e0;
+            font-family: 'Courier New', Courier, monospace;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* --- NAVIGATION --- */
+        nav {
+            background: #000;
+            border-bottom: 3px solid #00ffff; /* Encinitas Teal */
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            padding: 1.2rem 0;
+        }
+
+        nav .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .logo {
+            font-size: 1.6rem;
+            font-weight: bold;
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+        }
+
+        nav .logo span { color: #ff0055; } /* Red accent */
+
+        /* --- HERO SECTION (ENJOY LIFE®) --- */
+        .hero {
+            background: linear-gradient(135deg, #00ffff 0%, #1a1a1a 50%, #000 100%);
+            color: white;
+            padding: 220px 2rem 140px;
+            text-align: center;
+            border-bottom: 10px solid #ff0055; /* Spitfire Red */
+            position: relative;
+        }
+
+        .hero h1 {
+            font-size: 4.5rem;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+            text-shadow: 6px 6px 0px #ff0055;
+        }
+
+        .hero h2 {
+            font-size: 2.2rem;
+            color: #00ffff;
+            background: #000;
+            padding: 5px 15px;
+            transform: rotate(-3deg);
+            display: inline-block;
+            margin-bottom: 2rem;
+            box-shadow: 5px 5px 0px #fff;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            letter-spacing: 2px;
+            color: #ccc;
+        }
+
+        /* --- THE LAB (DESIGNER BOX) --- */
+        .lab-section {
+            background: #111;
+            border: 2px dashed #00ffff;
+            padding: 4rem 2rem;
+            margin: 4rem auto;
+            max-width: 800px;
+            text-align: center;
+        }
+
+        .lab-input {
+            width: 100%;
+            max-width: 500px;
+            padding: 1.2rem;
+            background: #000;
+            border: 2px solid #ff0055;
+            color: #00ffff;
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+            outline: none;
+        }
+
+        /* --- BUTTONS --- */
+        .btn {
+            display: inline-block;
+            padding: 1.2rem 3.5rem;
+            background: #ff0055;
+            color: white;
+            text-decoration: none;
+            border: 3px solid #fff;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: 0.2s;
+            box-shadow: 10px 10px 0px #00ffff;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            transform: translate(-5px, -5px);
+            box-shadow: 15px 15px 0px #00ffff;
+            background: #d32f2f;
+        }
+
+        /* --- THE VAULT (GALLERY) --- */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        h3 {
+            font-size: 2.5rem;
+            text-align: center;
+            color: #00ffff;
+            margin-bottom: 3rem;
+            text-transform: uppercase;
+            letter-spacing: 8px;
+        }
+
+        .vault-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .vault-item {
+            height: 300px;
+            background: #1a1a1a;
+            border: 3px solid #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            text-transform: uppercase;
+            position: relative;
+            overflow: hidden;
+            transition: 0.3s;
+        }
+
+        .vault-item:hover {
+            border-color: #ff0055;
+            transform: scale(1.02);
+        }
+
+        .vault-item span {
+            background: #000;
+            color: #fff;
+            padding: 10px 20px;
+            border: 1px solid #00ffff;
+        }
+
+        /* --- FOOTER --- */
+        footer {
+            background: #000;
+            color: #555;
+            text-align: center;
+            padding: 4rem 2rem;
+            border-top: 2px solid #222;
+        }
+
+        .integrity-note {
+            color: #444;
+            font-size: 0.7rem;
+            margin-top: 20px;
+            letter-spacing: 2px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="container">
+            <div class="logo"><span>2D</span> LOK'S STUDIO</div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <h1>ENJOY LIFE®</h1>
+        <h2>BY REBEL</h2>
+        <p>NORTH COUNTY STYLE | SKATE OR DIE | DIGITAL REAPER SERIES</p>
+        <a href="#lab" class="btn" style="margin-top: 30px;">Enter The Lab</a>
+    </section>
+
+    <div class="container">
+        
+        <section id="lab" class="lab-section">
+            <h3>THE LAB</h3>
+            <p style="margin-bottom: 2rem;">Transmit your vision. What's the next Reaper design?</p>
+            <input type="text" class="lab-input" placeholder="Describe your custom shirt...">
+            <br>
+            <button class="btn" onclick="alert('Signal Transmitted to the Vault.')">Transmit</button>
+        </section>
+
+        <section id="vault">
+            <h3>THE VAULT</h3>
+            <div class="vault-grid">
+                <div class="vault-item" style="background: linear-gradient(45deg, #000, #ff0055);"><span>Digital Reaper</span></div>
+                <div class="vault-item" style="background: linear-gradient(45deg, #000, #00ffff);"><span>Encinitas Tag</span></div>
+                <div class="vault-item" style="background: linear-gradient(45deg, #000, #333);"><span>Hustle Sketch</span></div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 2D LOK'S STUDIO | ENJOY LIFE® BRAND</p>
+        <p class="integrity-note">HONOR • ACCOUNTABILITY • REBEL SPIRIT</p>
+    </footer>
+
+</body>
+</html>
